@@ -1,13 +1,16 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text - almost black */
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
+    background-color: #333; /* Dark gray header */
+    color: #fff; /* White text in header */
+    padding: 1em 0;
+    text-align: center;
 }
 
 nav ul {
@@ -18,29 +21,64 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin-right: 1em;
+    margin-right: 20px;
 }
 
 nav a {
-    color: #fff;
+    color: #fff; /* White navigation links */
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ddd; /* Lighter white on hover */
 }
 
 #hero {
-    background-image: url("images/hero.jpg");
+    background-image: url("images/hero.jpg"); /* Ensure you have a hero.jpg in images folder */
     background-size: cover;
-    color: #fff;
-    padding: 4em;
+    background-position: center;
+    color: #fff; /* White text on hero image */
+    padding: 5em 2em;
     text-align: center;
+}
+
+#hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
 }
 
 #about, #menu, #contact {
     padding: 2em;
+    text-align: center;
+    background-color: #fff; /* White background for sections */
+    margin: 20px;
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Subtle shadow for sections */
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #eee; /* Light line separator for menu items */
+}
+
+#menu li:last-child {
+    border-bottom: none;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
+    background-color: #333; /* Dark gray footer */
+    color: #fff; /* White text in footer */
+    padding: 1.5em 0;
     text-align: center;
+    margin-top: 20px;
 }
