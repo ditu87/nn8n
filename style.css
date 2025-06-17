@@ -93,3 +93,99 @@ footer {
     text-align: center;
     margin-top: 20px;
 }
+
+/* Chat Bar Placeholder Styles */
+#chat-bar-placeholder {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+#chat-toggle-button {
+    background-color: #007bff; /* Blue to match theme */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+#chat-toggle-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#chat-window-placeholder {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* display: none; Initially hidden, will be toggled by JS */
+}
+
+#chat-header {
+    background-color: #007bff; /* Blue header */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chat-header span {
+    font-weight: bold;
+}
+
+#close-chat-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#chat-messages-placeholder {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    text-align: center; /* Center placeholder text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chat-messages-placeholder p {
+    color: #777;
+    font-style: italic;
+}
+
+#chat-input-placeholder {
+    padding: 10px;
+    background-color: #eee;
+    display: flex;
+}
+
+#chat-input-placeholder input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#chat-input-placeholder button {
+    background-color: #28a745; /* Green to match theme accent */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: not-allowed; /* Disabled appearance */
+}
